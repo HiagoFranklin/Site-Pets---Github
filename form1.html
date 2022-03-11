@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário adoção</title>
+	
+	<style>
+	
+	/*CSS para mudar a cor do formulário para azul*/
+	#form{
+		background-color: #55b3e3;
+	}
+	
+	/*CSS para mudar a cor dos componetes ou campos do formulário*/
+	input{
+		background-color: #ffe400;
+	}
+	
+	textarea{
+		background-color: #ffe400;
+	}
+	
+	radio{
+		color: #ffe400;
+	}
+	
+	fieldset{
+		background-color: #ffe400;
+	}
+	
+	select{
+		background-color: #ffe400;
+	}
+	
+	/*CSS para estilo a div cabeçalho*/
+	
+	#cabecalho{
+		top: 0;
+		left: 0;
+		background-color: #55b3e3;
+		width: 100%;
+		position: absolute;
+		height: 115px;
+		
+	}
+	#cabecalho h2{
+	text-align: center;
+	font: 300% arial;
+	font-weight: bold;
+	color: white;
+	height: 35px;
+	
+	}
+	
+	/*CSS para div que está o form*/
+	#divform{
+	margin: 1em auto;
+	width: 600px;
+	text-align: left;
+	
+	
+	
+	}
+	
+	/*CSS para mudar cor da div abaixo da cabeçalho para amarelo*/
+	#tituloCAD{
+		background-color: #ffe400;
+	}
+	/*CSS para a tabela que está o formulário*/
+	#tbform{
+	height: 700px;
+	}
+	
+	/*CSS para dar estilo ao título do formulário*/
+	#tituloform{
+	text-align: center;
+	padding: 5px 0 0 0;
+	}
+	/*CSS para dar estilo aos th do formulário, ou seja os sub título.*/
+	th{
+	font-family: arial;
+	padding: 0 0 0 7px;
+	}
+	
+	</style>
+	
+
+
+</head>
+<body onload="message()" background="imagens/foto3-adocao.jpg" style="background-repeat: no-repeat">
+	
+	<script type="text/javascript">
+	/*JavaScript com função para exibir uma mensagem*/ 
+	function message() 
+		{
+			alert("Faça seu cadastro:");	
+		}
+		
+		</script>
+		
+	/*Duas divs que formam o cabeçalho da página*/	
+		
+	<div id="cabecalho"><h2>Cadastro para adoção</h2><div id="tituloCAD">
+	<p>Cadastre-se para receber informações sobre pets precisando ser adotados.
+		Você receberá informações detalhadas por email ou telefone.</p></div></div>
+	
+	/*Div com o formulário*/
+	
+	<div id="divform">
+	<table id="tbform">
+	<tr>
+	<td>
+	
+		
+		<form id="form" action="confirmacao.html" method="post">
+		
+		<table  style="width: 500px">
+			
+			<tr>
+				<th id="tituloform"colspan="2">Informe seus Dados:</th>
+			</tr>
+			<tr>
+				<th>Nome:</th>
+				<td>
+					<input type="text" name="txtnome" size="70"
+						required="required"
+						value="" placeholder="Informe seu nome..."/>
+				</td>
+			</tr>
+			<tr>
+				<th>Sexo:</th>
+				<td>
+					<input type="radio" name="opcsexo" value="M"/>Masculino
+					<input type="radio" name="opcsexo" value="F"/>Feminino
+				</td>
+			</tr>
+			<tr>
+				<th>Cidade:</th>
+				<td>
+					<select name="cmbcidade">
+						<option value="NT">Natal</option>
+						<option value="JC">João Cãmara</option>
+						<option value="CM">Ceará Mirim</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Email:</th>
+				<td>
+					<input type="email" name="txtEmail" size="70"
+						required="required"
+						value="" placeholder="Informe seu Email@..."/>
+				</td>
+			</tr>
+			<tr>
+				<th>Telefone:</th>
+				<td>
+					<input type="tel" name="txtTel" 
+						required="required"
+						value="" placeholder="(84) 9..."/>
+				</td>
+			</tr>
+			<tr>
+				<th>Pets preferidos:</th>
+				<td>
+					<input type="checkbox" name="chkcachorro" value="cachorro"/>Cachorro
+					<input type="checkbox" name="chkgato" value="gato"/>Gato
+					<input type="checkbox" name="chkoutros" value="outros"/>Outros...
+				</td>
+			</tr>
+			<tr>
+				<th>Observações:</th>
+				<td>
+					<textarea name="txtarea" rows="5" cols="50">
+					</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<input type="submit" value="Enviar dados" />
+					<input type="reset" value="Limpar" />
+				</td>
+			</tr>
+		</table>
+		</form>
+	
+	</td>
+	</tr>
+	</table>
+	</div>
+</body>
+</html>
