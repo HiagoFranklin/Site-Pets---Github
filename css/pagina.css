@@ -1,0 +1,234 @@
+	
+	/* cabeçalho da pagina inicial, contendo a formatçãoo do titulo e as imagens iniciais.*/
+	
+	#cabecalho  h1{
+	text-align: center;
+	font: 300% arial;
+	font-weight: bold;
+	color: #ffe400 ;
+	padding: 15px;
+	}
+	#cabecalho img{
+	height: 55px;
+	padding-left: 10px;
+
+	}
+	.imagemcabecalho{
+		height: 2px;
+		
+	}
+	/* usamos o span para mudar a cor em duas no título principal*/
+	span{
+	color: white;
+	}
+/* menu principal da pagina, a baixo está toda a organização do menu e suas abas.*/
+
+	ul{
+	 margin: 0;
+	 padding: 0 0 0 50px;
+	 list-style: none;
+	 width: 235px;
+	 font-family: Arial;
+	 font-size: 20pt;
+	 font-weight: bold;
+	 border-bottom: 1px solid #ccc;
+	 
+	}
+	
+	li ul{
+	height: 90px;
+	position: absolute;
+	left: 235px;
+	top:0;
+	display: none;
+	 padding:0px;
+	
+	}
+	
+	ul li a {
+	height: 60px;
+	display: block;
+	 text-decoration: none;
+	 color: white;
+	 background-color: #ffe400;
+	 padding: 8px 20px 1px 15px;
+	 border: 2px solid #55b3e3;
+	 border-bottom: 0px;
+
+	}
+/* aqui  é os estilos usados para criar as sub opções do menu.*/
+	ul li {
+	position: relative;
+
+	}
+	li:hover ul.nivel1 {
+		display: block;
+		}
+		
+	ul.nivel1 li:hover ul.nivel2 {
+		display: block;
+	}
+	/* o a:hove é para mudar a cor quando passar o mouse por cima.*/ 
+	a:hover {
+	background-color: #55b3e3;
+	}
+	
+	/* tabela inicial que fica com as frases, acontece a mudança de cor do fundo de cada retângulo da tabela e das frases. */
+	
+	#titulotable {
+	background-color: #55b3e3;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	}
+	
+	#conteudotable {
+	background-color: #ffe400;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: #55b3e3;
+	text-align: center;
+	}
+	
+	#conteudo2table {
+	background-color: #55b3e3;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	}
+	
+	#conteudo3table {
+	background-color: #ffe400;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: #55b3e3;
+	text-align: center;
+	}
+	
+	#conteudo4table {
+	background-color: #55b3e3;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	}
+	
+	#conteudo5table {
+	background-color: #ffe400;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: #55b3e3;
+	text-align: center;
+	}
+	
+	#conteudo6table {
+	background-color: #55b3e3;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	}
+	
+	#conteudo7table {
+	background-color: #ffe400;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color:#55b3e3;
+	text-align: center;
+	}
+	
+	#conteudo8table {
+	background-color: #55b3e3;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	}
+	
+	#conteudo9table {
+	background-color: #ffe400;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: #55b3e3;
+	text-align: center;
+	}
+	
+	#conteudo10table {
+	background-color: #55b3e3;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	}
+	
+	#conteudo11table {
+	background-color: #ffe400;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color:#55b3e3;
+	text-align: center;
+	}
+	
+	#conteudo12table {
+	background-color: #55b3e3;
+	padding: 10px;
+	font-family: Arial;
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	}
+	
+	#rodape {
+	clear: right;
+	color: #ffff;
+	text-align: right;
+	font-size: 90%;
+	background: #55b3e3;
+	padding: 5px;
+	
+	}
+	
+	/* link para subir ao topo da tabela, aqui mudamos a cor da visitação, quando apertar e a cor do próprio link.*/
+	
+	.ir.topo{
+	a:link {
+	color: #55b3e3;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:focus {
+	color: #ffe400;
+}
+	
+	}
+
